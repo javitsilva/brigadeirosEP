@@ -1,0 +1,40 @@
+body { 
+  background: url(../../images/background.PNG) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+#content-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 70px;
+
+  .jumbotron {
+    border-radius: 15px;
+    padding: 20px;
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      text-align: center;
+      border-radius: 5px;
+      width: 40%;
+
+      @media (max-width: 480px) {
+        width: 70%;
+      }
+    } 
+  }
+}
