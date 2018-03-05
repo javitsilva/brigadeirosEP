@@ -22,15 +22,16 @@ body {
 #content-container .jumbotron h1 {
   text-align: center;
 }
-#content-container .jumbotron img {
+#content-container img {
   display: block;
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
   border-radius: 5px;
   width: 40%;
+  border: 5px solid #eee;
 }
 @media (max-width: 480px) {
-  #content-container .jumbotron img {
+  #content-container img {
     width: 70%;
   }
 }
