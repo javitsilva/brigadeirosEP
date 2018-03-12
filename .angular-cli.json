@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "assets/styles/fontawesome/web-fonts-with-css/css/fontawesome-all.css",
         "../bower_components/bootstrap/dist/css/bootstrap.min.css",
         "assets/styles/css/styles.css"
       ],

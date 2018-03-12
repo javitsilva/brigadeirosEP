@@ -1,9 +1,5 @@
 body {
-  background: url(../../images/background.PNG) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #FFF8DC;
 }
 .navbar {
   position: fixed;
@@ -17,21 +13,68 @@ body {
 }
 #content-container .jumbotron {
   border-radius: 15px;
-  padding: 20px;
+  padding: 0px 20px;
+  color: #000000;
+  background-color: #FFF8DC;
+  text-align: center;
 }
 #content-container .jumbotron h1 {
   text-align: center;
 }
-#content-container img {
+#home-img {
+  width: 30%;
+  border-radius: 250px;
   display: block;
   margin: 10px auto;
-  text-align: center;
-  border-radius: 5px;
-  width: 40%;
-  border: 5px solid #eee;
 }
 @media (max-width: 480px) {
-  #content-container img {
-    width: 70%;
+  #home-img {
+    width: 100%;
   }
+}
+.product {
+  display: inline-block;
+  width: 49%;
+  height: 350px;
+  background-color: #FFF8DC;
+  padding-top: 25px;
+}
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
+}
+.product img {
+  height: 75%;
+  border-radius: 10px;
+  display: block;
+  margin: 5px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.product .product-info {
+  text-align: center;
+}
+.fab {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.carousel-inner > .item > img {
+  height: 500px;
+  object-fit: contain;
 }
