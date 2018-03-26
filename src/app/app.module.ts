@@ -9,6 +9,7 @@ import { LocationsComponent } from './locations/locations.component';
 import { OrderComponent } from './order/order.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { FormsModule }   from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
