@@ -10,6 +10,8 @@ import { OrderComponent } from './order/order.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { FormsModule }   from '@angular/forms';
+import { EmailService } from './email.service';
+import { HttpClientModule }    from '@angular/common/http';
 
 
 @NgModule({
@@ -24,9 +26,11 @@ import { FormsModule }   from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+    
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

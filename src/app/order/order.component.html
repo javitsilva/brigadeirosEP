@@ -1,9 +1,9 @@
-<div id="order-warning" *ngIf="valid==false" class="alert alert-warning">
+<div id="order-warning" *ngIf="error" class="alert alert-warning">
   <strong>Oops!</strong> {{error}}
 </div>
-<div id="order-sucess" *ngIf="success==true">
+<div id="order-success" *ngIf="success==true">
   <div class="alert alert-success">
-    <strong>Hey {{customerName}}!</strong> We have received your request, we will contact you soon!
+    <strong>Hey {{customerName}}!</strong> Thanks for supporting Brigadeiros El Paso. We have received your request, we will contact you soon!
   </div>
 </div>
 <form id="order-form" *ngIf="!success || success==false" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
@@ -23,5 +23,5 @@
     <label for="emailTextarea">Tell us what your interested in!</label>
     <textarea name="text" ngModel required #text="ngModel" class="form-control" id="emailTextarea" rows="3"></textarea>
   </div>
-  <button class="btn btn-primary center-block">Submit</button>
+  <button class="btn btn-primary center-block">{{sendButton}}</button>
 </form>

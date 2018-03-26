@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm} from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import { EmailService } from '../email.service';
+import { EmailRequest } from '../EmailRequest'
 
 @Component({
   selector: 'app-order',
@@ -8,17 +10,26 @@ import {NgForm} from '@angular/forms';
 })
 export class OrderComponent implements OnInit {
 
-  valid: boolean;
+  sendButton: String = 'Send';
+  warning: boolean;
   success: boolean;
   customerName: String;
   error: String;
 
   onSubmit(f: NgForm): void {
-    this.valid = f.valid;
-
-    if(this.valid == true) {
+    if(f.valid == true) {
       this.customerName = f.value.customer;
-      this.success = true;
+      var request = new EmailRequest(f.value.customer, f.value.number, f.value.email, f.value.text);
+      this.sendButton = 'Sending...';
+      this.emailService.sendEmail(request).subscribe(
+        (res: any) => {
+          this.success = true;
+        }, (error: any) => {
+          console.log('error: ' + JSON.stringify(error));
+          this.error = 'Sorry there was an error sending, please try again later or contact us by social media, phone, or email found on our About Us page.';
+          this.success = false;
+          this.sendButton = 'Send';
+      });
     } else {
       this.error = 'Please complete the form.';
     }
@@ -28,7 +39,7 @@ export class OrderComponent implements OnInit {
     return true;
   }
 
-  constructor() { }
+  constructor(private emailService: EmailService) { }
 
   ngOnInit() {
   }
