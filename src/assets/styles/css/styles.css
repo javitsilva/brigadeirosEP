@@ -89,6 +89,24 @@ body {
   margin: 0px auto;
   max-width: 500px;
 }
+#about-us-text {
+  font-size: 10px;
+}
+#about-us-text-banner h1 {
+  background: rgba(152, 251, 152, 0.3);
+  width: 112%;
+  margin-left: -6%;
+  margin-right: -6%;
+  margin-top: -20px;
+  padding: 100px 0px;
+  text-align: center;
+}
+#about-us-text p {
+  font-size: 18px;
+}
+#locations-text p {
+  font-size: 18px;
+}
 .carousel-inner > .item > img {
   height: 500px;
   object-fit: contain;
