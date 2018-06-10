@@ -12,7 +12,7 @@ export class OrderComponent implements OnInit {
 
   sendButton: String = 'Send';
   warning: boolean;
-  success: boolean;
+  success: any;
   customerName: String;
   error: String;
 
