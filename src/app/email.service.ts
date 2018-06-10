@@ -10,9 +10,9 @@ export class EmailService {
 
   public sendEmail(request: EmailRequest): Observable<any> {
     var req = {
-      service_id: 'javitsilva@gmail.com',
+      service_id: 'brigadierosEPapp@gmail.com',
       template_id: 'standard',
-      user_id: 'user_6hc5nyxx16p1uaQ2uzA6G',
+      user_id: 'user_AzE9zP9jmJC1Auk3iHELz',
       template_params: {
         name: request.name,
         number: request.number,
