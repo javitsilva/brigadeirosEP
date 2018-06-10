@@ -1,0 +1,18 @@
+{
+  "name": "brigadeiros-ep",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/javitsilva/brigadeirosEp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.3.1",
+    "bootstrap": "3.3.7"
+  }
+}
