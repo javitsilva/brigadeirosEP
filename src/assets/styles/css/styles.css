@@ -1,0 +1,113 @@
+body {
+  background-color: #FFF8DC;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+#content-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 70px;
+}
+#content-container .jumbotron {
+  border-radius: 15px;
+  padding: 0px 20px;
+  color: #000000;
+  background-color: #FFF8DC;
+  text-align: center;
+}
+#content-container .jumbotron h1 {
+  text-align: center;
+}
+#home-img {
+  width: 30%;
+  border-radius: 250px;
+  display: block;
+  margin: 10px auto;
+}
+@media (max-width: 480px) {
+  #home-img {
+    width: 100%;
+  }
+}
+.product {
+  display: inline-block;
+  width: 49%;
+  height: 350px;
+  background-color: #FFF8DC;
+  padding-top: 25px;
+}
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
+}
+.product img {
+  height: 75%;
+  border-radius: 10px;
+  display: block;
+  margin: 5px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.product .product-info {
+  text-align: center;
+}
+.fab {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+#order-form {
+  display: block;
+  margin: 0px auto;
+  max-width: 500px;
+}
+#order-warning {
+  display: block;
+  margin: 0px auto;
+  max-width: 500px;
+}
+#order-success {
+  display: block;
+  margin: 0px auto;
+  max-width: 500px;
+}
+#about-us-text {
+  font-size: 10px;
+}
+#about-us-text-banner h1 {
+  background: rgba(152, 251, 152, 0.3);
+  width: 112%;
+  margin-left: -6%;
+  margin-right: -6%;
+  margin-top: -20px;
+  padding: 100px 0px;
+  text-align: center;
+}
+#about-us-text p {
+  font-size: 18px;
+}
+#locations-text p {
+  font-size: 18px;
+}
+.carousel-inner > .item > img {
+  height: 500px;
+  object-fit: contain;
+}

@@ -1,0 +1,180 @@
+@main-background: #FFF8DC;
+@text-black: #000000;
+
+body { 
+  // background: url(../../images/background.PNG) no-repeat center center fixed; 
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  background-color: @main-background;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+#content-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 70px;
+
+  // font-family: "Arial", Helvetica, sans-serif;
+
+  .jumbotron {
+    border-radius: 15px;
+    padding: 0px 20px;
+    color:  @text-black;
+    background-color: @main-background;
+    text-align: center;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  // img {
+  //   display: block;
+  //   margin: 10px auto;
+  //   text-align: center;
+  //   border-radius: 5px;
+  //   width: 40%;
+  //   border:5px solid #eee;
+
+  //   @media (max-width: 480px) {
+  //     width: 70%;
+  //   }
+  // } 
+}
+
+#home-img {
+  width: 30%;
+  border-radius: 250px;
+
+  display: block;
+  margin: 10px auto;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.product {
+  display: inline-block;
+  width: 49%;
+  height: 350px;
+  background-color: @main-background;
+  // border: 1px solid black;
+  padding-top: 25px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+
+  img {
+    height: 75%;
+    border-radius: 10px;
+    display: block;
+    margin: 5px auto;
+    // border: 3px solid #778899;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .product-info {
+    // background-color: yellow;
+    text-align: center;
+    // width: 70%;
+  }
+}
+
+.fab {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;  
+  border-radius: 50px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+#order-form {
+  display: block;
+  margin: 0px auto;
+  max-width: 500px;
+}
+
+#order-warning {
+  display: block;
+  margin: 0px auto;
+  max-width: 500px;
+}
+
+#order-success {
+  display: block;
+  margin: 0px auto;
+  max-width: 500px;
+}
+
+#about-us-text {
+  font-size: 10px;
+}
+
+// #about-us-banner {
+//   img {
+//     text-align: center;
+//     max-height: 400px;
+  
+//     @media (max-width: 480px) {
+//       width: 100%;
+//     }
+//   }
+// }
+
+#about-us-text-banner {
+  h1 {
+    background: rgba(152, 251, 152, 0.3);
+    width: 112%;
+    margin-left: -6%;
+    margin-right: -6%;
+    margin-top: -20px;
+    padding: 100px 0px;
+    text-align: center;
+  }
+}
+
+#about-us-text {
+  p {
+    font-size: 18px;
+  }
+}
+
+#locations-text {
+  p {
+    font-size: 18px;
+  }
+}
+
+.carousel-inner {
+  > .item {
+    > img {    
+      height: 500px;
+      object-fit: contain;  
+    }
+  }
+}
